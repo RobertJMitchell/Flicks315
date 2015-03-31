@@ -51,12 +51,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Flicks315.Data\Flicks315.Data.csproj">
-      <Project>{7d3dc803-a198-472c-88cc-c502ef7bf20b}</Project>
-      <Name>Flicks315.Data</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>

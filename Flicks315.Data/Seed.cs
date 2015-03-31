@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace Flicks315.Data
 {
-    public class Class1
+    public static class Seed
     {
+        public static void Seeder(FlicksDbContext db)
+        {
+
+        }
+
+
+
     }
 }
