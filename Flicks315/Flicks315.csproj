@@ -165,6 +165,16 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Flicks315.Data.Model\Flicks315.Data.Model.csproj">
+      <Project>{3aeffe36-3dac-4a10-a3cc-2b36bff62ca6}</Project>
+      <Name>Flicks315.Data.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Flicks315.Data\Flicks315.Data.csproj">
+      <Project>{7d3dc803-a198-472c-88cc-c502ef7bf20b}</Project>
+      <Name>Flicks315.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
