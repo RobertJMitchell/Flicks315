@@ -47,9 +47,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FlicksDbContext.cs" />
+    <Compile Include="Migrations\201503311610017_MovieInitialSetup.cs" />
+    <Compile Include="Migrations\201503311610017_MovieInitialSetup.Designer.cs">
+      <DependentUpon>201503311610017_MovieInitialSetup.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Seed.cs" />
+    <Compile Include="Seeder.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -60,6 +64,11 @@
       <Project>{3aeffe36-3dac-4a10-a3cc-2b36bff62ca6}</Project>
       <Name>Flicks315.Data.Model</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201503311610017_MovieInitialSetup.resx">
+      <DependentUpon>201503311610017_MovieInitialSetup.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace Flicks315.Data
 {
-    public static class Seed
+    public static class Seeder
     {
-        public static void Seeder(FlicksDbContext db)
+        public static void Seed(FlicksDbContext db)
         {
             db.Movies.AddOrUpdate(
                 m => new { m.MovieId, m.Title, m.Rating, m.Description },
@@ -29,7 +29,6 @@ namespace Flicks315.Data
                 );
         }
 
-
-
+        
     }
 }
